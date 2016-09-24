@@ -39,7 +39,7 @@ p, a{ font-family: 'Source Sans Pro', sans-serif; }
 .Site-content { flex:1;  min-width:50vw; margin:2em auto; }
 .Site-content h1, p { text-align:center;  }
 .Site-content h1 { margin-top:1.2em; line-height:0.5em; }
-.Site-content button
+.Site-content input[type=button]
 {
   margin: 0 auto;
   cursor: pointer;
@@ -47,16 +47,16 @@ p, a{ font-family: 'Source Sans Pro', sans-serif; }
   background-color:#b3ccff;
   border:none; padding:1em;
   border-radius:3em;
-  font-size:1.1em;
+ font-size:2.2em;
   letter-spacing: 0.2em;
   font-family: 'Covered By Your Grace', cursive;
 }
 
-.Site-content button:focus { outline:0; }
-.Site-content button:hover
+.Site-content input[type=button]:focus { outline:0; }
+.Site-content input[type=button]:hover
 {
-  background-color:#b3ffd9;
-  transition: background-color 0.8s ease-in;
+  opacity:0.7;
+  transition: opacity 0.8s ease-in;
  }
 .box { max-width:50vw; min-height:25vh; margin:0 auto;}
 
@@ -69,10 +69,12 @@ p#quote-text { font-family: 'Covered By Your Grace', cursive; font-size:1.5em; }
 .footer p { color:#4d94ff; text-align: center; }
 .footer a { text-decoration:none; }
 
-@media (min-width: 700px){
-    .Site-content h1{ font-size:4em; }
-    .Site-content p {font-size:2.2em }
+@media (min-width: 320px){
+    .Site-content h1{ font-size:7em; }
+    .Site-content p {font-size:3em; }
+    .Site-content { margin:30em auto;  }
     .Site-content .box { width:100%; }
     .Site-content .box p, .Site-content .box p#quote-text { font-size:3.2em; }
     blockquote { width:100%; margin:0; }
+    input[type=button] { width:350px; height:150px; font-size:100%; }
 }
