@@ -65,6 +65,14 @@ a#author { float:right; text-decoration: none; font-weight:bold; color:#4d94ff; 
 a#tweet-this:hover { opacity:0.5; transition: opacity 0.5s ease-in; }
 p#quote-text { font-family: 'Covered By Your Grace', cursive; font-size:1.5em; }
 
-.footer { background-color:##70db70; opacity: 0.8;}
+.footer { background-color:#70db70; opacity: 0.8;}
 .footer p { color:#4d94ff; text-align: center; }
 .footer a { text-decoration:none; }
+
+@media (min-width: 700px){
+    .Site-content h1{ font-size:4em; }
+    .Site-content p {font-size:2.2em }
+    .Site-content .box { width:100%; }
+    .Site-content .box p, .Site-content .box p#quote-text { font-size:3.2em; }
+    blockquote { width:100%; margin:0; }
+}

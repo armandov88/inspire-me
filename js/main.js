@@ -15,17 +15,13 @@ window.twttr = (function(d, s, id) {
   return t;
 }(document, "script", "twitter-wjs"));
 
-function tweetIt(text, author)
-{
-  var tweetThis = text + " By - " + author;
-  var twitterURL = 'https://twitter.com/intent/tweet?url=&text=' + tweetThis;
-}
 function getQuote(author, text) {
 
   var forismaticURL = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?"
   var author = $('#author');
   var text = $('#quote-text');
   var tweet = $("#tweet-this");
+    $('blockquote').hide();
 
   $.getJSON(forismaticURL, function(data) {
     $('blockquote').fadeIn('slow');
